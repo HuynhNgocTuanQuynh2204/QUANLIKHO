@@ -35,6 +35,9 @@ if(isset($_GET['dangxuat']) && $_GET['dangxuat'] == 1){
                 <li class="sidebar-item">
                     <a href="index.php?quanly=giohang" class="sidebar-link">Danh sách loại hàng cần xuất</a>
                 </li>
+                <li class="sidebar-item">
+                    <a href="index.php?quanly=danhsachtaikhoan" class="sidebar-link">Danh sách tài khoản</a>
+                </li>
             </ul>
         </li>
         </ul>

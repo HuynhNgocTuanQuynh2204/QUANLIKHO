@@ -81,6 +81,18 @@
             else if($tam =='7ngay'){
                 include("main/7ngay.php");
             }
+            else if($tam =='danhsachtaikhoan'){
+                include("main/danhsachtaikhoan.php");
+            }
+            else if($tam =='themtaikhoan'){
+                include("main/themtaikhoan.php");
+            }
+            else if($tam =='suataikhoan'){
+                include("main/suataikhoan.php");
+            }
+            else if($tam =='timkiemtaikhoan'){
+                include("main/timkiemtaikhoan.php");
+            }
             else {
                 include("main/index.php");
             }
