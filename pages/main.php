@@ -24,6 +24,9 @@
             else if($tam =='xulydanhmuc'){
                 include("xuly/xulydanhmuc.php");
             }
+            else if($tam =='xulytaikhoan'){
+                include("xuly/xulytaikhoan.php");
+            }
             else if($tam =='xulysanpham'){
                 include("xuly/xulysanpham.php");
             }
