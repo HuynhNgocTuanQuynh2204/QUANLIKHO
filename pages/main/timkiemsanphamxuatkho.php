@@ -24,6 +24,7 @@
                     </div>
                 </div>
             </div>
+            <h6 style="text-align: center;padding: 10px;">Tìm kiếm: <?php echo $_POST['tukhoa'];  ?></h6>
             <div class="header_fixed">
                 <table>
                     <thead>
@@ -38,7 +39,12 @@
                     </thead>
                     <tbody>
                         <?php
-                            $sql = "SELECT * FROM sanpham,danhmuc WHERE sanpham.id_dm = danhmuc.id_dm ORDER BY sanpham.id_sp DESC";
+                          if(isset($_POST['timkiem'])){
+                            $tukhoa = $_POST['tukhoa'];
+                        } else{
+                            $tukhoa = '';
+                        }
+                            $sql = "SELECT * FROM sanpham,danhmuc WHERE sanpham.id_dm = danhmuc.id_dm AND sanpham.tensanpham LIKE '%" . $tukhoa . "%' ORDER BY sanpham.id_sp DESC";
                             $qr = mysqli_query($mysqli, $sql);
                             $i = 0;
                             while ($row = mysqli_fetch_array($qr)) {

@@ -84,6 +84,9 @@
             else if($tam =='danhsachtaikhoan'){
                 include("main/danhsachtaikhoan.php");
             }
+            else if($tam =='timkiemsanphamxuatkho'){
+                include("main/timkiemsanphamxuatkho.php");
+            }
             else if($tam =='themtaikhoan'){
                 include("main/themtaikhoan.php");
             }
