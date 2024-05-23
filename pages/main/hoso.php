@@ -2,8 +2,7 @@
 <div class="main p-3">
     <div class="text-center">
         <?php
-        $sql = "SELECT * FROM user
-        ORDER BY id_user DESC";
+       $sql = "SELECT * FROM user WHERE id_user = " . $_SESSION['id_user'] . " ORDER BY id_user DESC";
         $qr = mysqli_query($mysqli, $sql);
         ?>
 

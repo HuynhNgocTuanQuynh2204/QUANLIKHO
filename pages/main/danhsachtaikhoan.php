@@ -46,6 +46,7 @@
                             $i = 0;
                             while ($row = mysqli_fetch_array($qr)) {
                                 $i++;
+                                if($row['hovaten']!=$_SESSION['hovaten']){
                         ?>
                         <tr>
                             <td><?php echo $i ?></td>
@@ -57,7 +58,7 @@
                             <td><a href="index.php?quanly=xulytaikhoan&id=<?php echo $row['id_user'] ?>" class="delete">Xóa</a></td>
                         </tr>
                         <?php
-                            }
+                            }}
                         ?>
                     </tbody>
                 </table>
